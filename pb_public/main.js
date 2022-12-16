@@ -21,8 +21,8 @@ btn.addEventListener("click", function (e) {
 });
 
 async function newTodo(text) {
-  // create div
-  const record = await pb.collection('todo').create({
+  
+  const taskItem = await pb.collection('todo').create({
     task: todoInput.value,
 });
   if (!todoInput.checkValidity()) {
