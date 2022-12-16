@@ -1,0 +1,30 @@
+{
+  "name": "cpsc349-project4",
+  "version": "1.0.0",
+  "description": "CPSC 349 - Fall 2022 - Project 4 - Group 16",
+  "main": "index.js",
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./pb_public/style.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pocketbase": "./pocketbase serve",
+    "esbuild": "esbuild src/app.jsx --outfile=pb_public/app.js --watch",
+    "start": "npm-run-all --parallel esbuild pocketbase tailwind"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lyquochao84/cpsc349-exercise4.git"
+  },
+  "author": "Group 16",
+  "license": "N/A",
+  "bugs": {
+    "url": "https://github.com/lyquochao84/cpsc349-exercise4/issues"
+  },
+  "homepage": "https://github.com/lyquochao84/cpsc349-exercise4#readme",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "tailwindcss": "^3.2.4"
+  },
+  "dependencies": {
+    "esbuild": "0.16.7"
+  }
+}
