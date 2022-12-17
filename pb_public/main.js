@@ -23,10 +23,10 @@ btn.addEventListener("click", function (e) {
 async function newTodo(text) {
   
   const taskItem = await pb.collection('todo').create({
-    task: todoInput.value,
+    task: text,
 });
   if (!todoInput.checkValidity()) {
-    alert("Your TODO title is missing")
+    alert("There is nothing in the TODO BOX")
 
     return false
   }

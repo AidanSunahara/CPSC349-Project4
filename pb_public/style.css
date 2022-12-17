@@ -576,14 +576,14 @@ video {
   margin-right: auto;
 }
 
-.my-3\.5 {
-  margin-top: 0.875rem;
-  margin-bottom: 0.875rem;
-}
-
 .my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
+}
+
+.my-3\.5 {
+  margin-top: 0.875rem;
+  margin-bottom: 0.875rem;
 }
 
 .mb-6 {
@@ -634,12 +634,12 @@ video {
   margin-top: 2rem;
 }
 
-.mb-3\.5 {
-  margin-bottom: 0.875rem;
-}
-
 .mb-3 {
   margin-bottom: 0.75rem;
+}
+
+.mb-3\.5 {
+  margin-bottom: 0.875rem;
 }
 
 .block {
@@ -1073,10 +1073,4 @@ video {
 
 .hover\:underline:hover {
   text-decoration-line: underline;
-}
-
-@media (min-width: 640px) {
-  .sm\:mt-8 {
-    margin-top: 2rem;
-  }
 }
