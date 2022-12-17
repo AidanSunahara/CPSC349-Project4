@@ -1,6 +1,6 @@
 
 
-let btn = document.querySelector("button");
+let btn = document.querySelector("#btn");
 let email = document.querySelector("#email");
 let password = document.querySelector("#password");
 let username = document.querySelector("#username");

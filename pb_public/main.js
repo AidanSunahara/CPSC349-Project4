@@ -1,6 +1,6 @@
 const pb = new PocketBase('http://127.0.0.1:8090')
 let todoInput = document.querySelector("#todo-input");
-let btn = document.querySelector("button");
+let button = document.querySelector("#task-button");
 let list = document.querySelector("#todo-list");
 let itemCountSpan = document.querySelector('#item-count')
 let uncheckedCountSpan = document.querySelector('#unchecked-count')
@@ -14,7 +14,7 @@ const todoTemplate = (todoTitle) => `
   </div>
 `
 
-btn.addEventListener("click", function (e) {
+button.addEventListener("click", function (e) {
   e.preventDefault();
   let text = todoInput.value;
   newTodo(text);
