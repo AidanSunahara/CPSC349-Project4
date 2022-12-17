@@ -6,78 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script defer src="https://unpkg.com/pocketbase@0.8.1/dist/pocketbase.umd.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.5/dist/flowbite.min.css" />
-    <link rel="stylesheet" href="style.css"></link>
+    <link rel="stylesheet" href="style.css">
 </head>
-<nav class="flex flex-row justify-between m-6">
-  <div class="text-lg">
-    To-Do App
-  </div>
-<!-- Modal toggle -->
-<button class="block text-white bg-blue-700 hover:scale-110 duration-150 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center " type="button" data-modal-toggle="staticModal">
-  About Us
-</button>
-</nav>
-<!-- Main modal -->
-<div id="staticModal" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
-    <div class="relative w-full h-full max-w-2xl md:h-auto">
-        <!-- Modal content -->
-        <div class="relative bg-white rounded-lg shadow ">
-            <!-- Modal header -->
-            <div class="flex items-start justify-between p-4 border-b rounded-t ">
-                <h3 class="text-xl font-semibold text-gray-900 ">
-                    About Us
-                </h3>
-                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" data-modal-toggle="staticModal">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>  
-                </button>
+
+<body>
+<div class="w-screen h-screen flex justify-center items-center bg-gradient-to-r from-sky-50 to-yellow-200">
+    <div class="px-8 py-6 mt-4 text-left bg-white shadow-lg">
+        <h3 class="text-2xl font-bold text-center">Sign In</h3>
+        <form action="mainPage.html">
+            <div class="mt-4">
+              <div>
+                  <input class = "username" type="username" placeholder="Username" required>
+              </div>
+                <div class="mt-4">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="flex items-baseline justify-between">
+                    <button class="px-6 py-2 mt-4 text-white bg-blue-600 rounded-lg hover:bg-blue-900">Login</button>
+                    <a href="signup.html" class="text-sm text-blue-600 hover:underline"> Signup </a>
+                </div>
             </div>
-            <!-- Modal body -->
-            <div class="p-5 space-y-6 text-left">
-                <p class="text-base leading-relaxed text-black">
-                    Aidan Sunahara - <a class= "text-blue-500"href="https://github.com/AidanSS/CPSC349-Project4"> Github </a>
-                </p>
-                <p class="text-base leading-relaxed text-black">
-                    Hao Ly - (Main)<a class= "text-blue-500"href="https://github.com/lyquochao84/CPSC349-Project4"> Github </a>
-                </p>
-                  <p class="text-base leading-relaxed text-black">
-                    Elizabeth Steubs - X
-                </p>
-                  <p class="text-base leading-relaxed text-black">
-                    Quoc Le - <a class= "text-blue-500"href="https://github.com/lyquochao84/CPSC349-Project4"> Github </a>
-                </p>
-            </div>   
-        </div>
+        </form>
     </div>
 </div>
 
-
-
-<body class="bg-gradient-to-r from-sky-50 to-yellow-200">
-  <div class="container mx-auto px-4">
-    <div class="text-center text-xl">Create your notes now!</div>
-    <div class="text-center text-black-900">
-      <div class="mx-auto">
-        <a href="user/login.html" class="text-sm text-black-900 underline hover:text-blue-800">
-          Already have an account? Log in
-        </a>
-      </div>
-    </div>
-    <div class="flex p-4">
-      <span class="flex-1 text-center text-teal-900">Item count: <span id="item-count">0</span></span>
-      <!-- <span class="flex-1 text-center text-teal-900">Unchecked count: <span id="unchecked-count">0</span></span> -->
-    </div>
-    <div class="flex shadow bg-white p-2">
-      <input id="todo-input" class="w-full rounded text-gray-700 p-2" type="text" placeholder="Add note" maxlength="50" required>
-      <button id="task-button" class= "addTask font-semibold text-black text-sm hover:bg-green-400 duration-150 cursor-pointer rounded mx-2 px-6 bg-green-500">+</button>
-    </div>
-    <div id="todo-list"></div>
-  </div>
-    <script type="module" src="app.js"></script>
-    <script type="module" src="main.js"></script>
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-    <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
-  </body>
+</body>
 
 </html>
