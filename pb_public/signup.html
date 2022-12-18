@@ -13,7 +13,7 @@
   <div class="w-screen h-screen flex justify-center items-center bg-gradient-to-r from-sky-50 to-yellow-200">
       <div class="px-8 py-6 mt-4 text-left bg-white shadow-lg rounded-lg ">
           <h3 class="text-2xl font-bold text-center">Sign Up</h3>
-          <form action="index.html">
+          <form action="index.html" method="form">
               <div>
                   <div class="my-3.5">
                       <input id="username" type="username" placeholder="Username" required>
@@ -24,6 +24,9 @@
                   <div class="mb-3.5">
                       <input id ="password" type="password" placeholder="Password" required>
                   </div>
+                  <div class="mb-.5 text-sm text-gray-400">
+                    5 characters minimum for password
+                </div>
                   <div class="flex items-baseline justify-between">
                       <button id ="btn" class="px-6 py-2 mt-4 text-white bg-blue-600 rounded-lg hover:bg-blue-900">
                         Sign up
@@ -38,7 +41,7 @@
   </div>
   <!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script> -->
-  <script src="./app.js"> </script>
+
   <script type="module" src="signup.js"></script>
 </body>
 

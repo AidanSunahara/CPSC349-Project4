@@ -1,24 +1,30 @@
 const pb = new PocketBase("http://127.0.0.1:8090");
-let btn = document.querySelector("#btn");
+let button = document.querySelector("#btn");
 let email = document.querySelector("#email");
 let password = document.querySelector("#password");
 let username = document.querySelector("#username");
 
 
-btn.addEventListener("click", function (e) {
-    let emailText = email.value;
-    let userNameText = username.value;
-    let passText = password.value;
+button.addEventListener("click", function (e) {
     createUser();
+    console.log("f");
   });
 
 async function createUser(){
   const data = {
-    username: username.value,
-    email: email.value,
-    emailVisibility: true,
-    password: password.value,
-    field: "test"
+    "username": username.value,
+    "email": email.value,
+    "emailVisibility": true,
+    "password": password.value,
+    "passwordConfirm": password.value,
 };
-    const authData = await pb.collection('users').create(data);
+try{
+  const authData = await pb.collection('users').create(data);
+} catch (err){
+  console.log(err.data);
+  alert("Signup failed");
+  window.location.replace("signup.html");
+
+}
+    
 }

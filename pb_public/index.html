@@ -16,20 +16,23 @@
         <form action="mainPage.html">
             <div class="mt-4">
               <div>
-                  <input class = "username" type="username" placeholder="Username" required>
+                  <input id="username" class = "username" type="username" placeholder="Username" required>
               </div>
                 <div class="mt-4">
-                    <input type="password" placeholder="Password" required>
+                    <input id="password" type="password" placeholder="Password" required>
+                </div>
+                <div id = "failed" class="mt-4 text-red-500 text-sm">
+
                 </div>
                 <div class="flex items-baseline justify-between">
-                    <button class="px-6 py-2 mt-4 text-white bg-blue-600 rounded-lg hover:bg-blue-900">Login</button>
+                    <button id ="btn" class="px-6 py-2 mt-4 text-white bg-blue-600 rounded-lg hover:bg-blue-900">Login</button>
                     <a href="signup.html" class="text-sm text-blue-600 hover:underline"> Signup </a>
                 </div>
             </div>
         </form>
     </div>
 </div>
-
+<script type="module" src="login.js"></script>
 </body>
 
 </html>

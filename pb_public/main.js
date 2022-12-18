@@ -5,6 +5,12 @@ let list = document.querySelector("#todo-list");
 let itemCountSpan = document.querySelector('#item-count')
 let uncheckedCountSpan = document.querySelector('#unchecked-count')
 
+
+
+//USERNAME
+document.getElementById("user").innerHTML = "fff";
+
+
 const todoTemplate = (todoTitle) => `
   <div class="todo-container text-gray-700 text-center mt-2">
     <div class="flex justify-between bg-cyan-100 shadow mb-2">
